@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 String getGreeting(String name) {
   return 'Hello, $name! Welcome to Flutter.';
 }
@@ -15,7 +17,7 @@ void main() {
   int result = addNumbers(10, 20);
   bool eligible = isEligibleForJob(29);
 
-  print(greeting);
-  print('Addition result: $result');
-  print('Job eligible by age: $eligible');
+  debugPrint(greeting);
+  debugPrint('Addition result: $result');
+  debugPrint('Job eligible by age: $eligible');
 }

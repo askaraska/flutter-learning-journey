@@ -49,6 +49,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
       userName = enteredName;
       userProfession = enteredProfession;
       profileSubmitted = true;
+
+      // Clear input fields after successful submission.
+      nameController.clear();
+      professionController.clear();
     });
   }
 
